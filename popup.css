@@ -1,0 +1,47 @@
+body {
+  min-width: 350px;
+}
+
+.name {
+  text-align: center;
+}
+
+.bookmark-button {
+  width: 98%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background: rgb(116, 75, 211);
+  font-size: 1 em;
+}
+
+.bookmark-button:hover {
+  cursor: pointer;
+  color: rgb(245, 237, 237);
+}
+
+.main-div {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.title-div {
+  width: 70%;
+  float: left;
+  cursor: pointer;
+  font-size: 0.5 rem;
+}
+
+.delete-div {
+  width: 20%;
+  float: right;
+  cursor: pointer;
+  font-size: 0.7 rem;
+  border-radius: 40px;
+  background: #fc1111;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.delete-div:hover {
+  color: black;
+}
