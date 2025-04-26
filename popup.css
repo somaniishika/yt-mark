@@ -1,4 +1,4 @@
-body {
+/* body {
   min-width: 350px;
 }
 
@@ -44,5 +44,74 @@ body {
 
 .delete-div:hover {
   color: black;
+<<<<<<< HEAD
 }
 
+=======
+} */
+
+body {
+  min-width: 350px;
+  font-family: Arial, sans-serif;
+}
+
+.name {
+  text-align: center;
+}
+
+.bookmark-button {
+  width: 98%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background: rgb(116, 75, 211);
+  font-size: 1em;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+.bookmark-button:hover {
+  cursor: pointer;
+  color: rgb(245, 237, 237);
+}
+
+.main-div {
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-div {
+  width: 60%;
+}
+
+.title-div input {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-size: 12px;
+  border: none;
+}
+
+.edit-btn {
+  background: #00aaff;
+  color: white;
+}
+
+.delete-btn {
+  background: #fc1111;
+  color: white;
+}
+/*>>>>>>> 6370ad3 (updated functionality)*/
