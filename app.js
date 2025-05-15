@@ -1,4 +1,4 @@
-//get current time of the youtube video 
+//current time of the youtube video 
 function getCurrentTime(player) {
     let controls = player.children[0].children[0].currentTime;
     let time = {
@@ -8,12 +8,12 @@ function getCurrentTime(player) {
     return time;
 }
 
-//get the title of the youtube video
+//title of the youtube video
 function getTitle() {
     return document.title;
 }
 
-//get query of youtube video id
+//query of youtube video id
 function getUrl() {
     let query = new URLSearchParams(window.location.search).get('v');
     if (typeof query === "string") {
@@ -22,7 +22,7 @@ function getUrl() {
     return undefined;
 }
 
-//listen for message for creating bookmark and redirection
+//message for creating bookmark and redirection
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.bookmark) {
@@ -36,7 +36,7 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
-//store the bookmark into chrome sync storage
+//store the bookmark into chrome
 function setStorage() {
     let player = document.getElementById("movie_player");
     let time = getCurrentTime(player);
